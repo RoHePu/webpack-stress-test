@@ -1,0 +1,22 @@
+{
+  "name": "webpack-stress-test",
+  "version": "1.0.0",
+  "description": "Test Webpack with as many files as you want.",
+  "main": "index.js",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {
+    "find-remove": "^1.0.1",
+    "tapable": "^0.2.6",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "debug": "node --inspect --debug-brk node_modules/webpack/bin/webpack.js --verbose",
+    "debug_dev": "node --inspect --debug-brk node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "create": "node file_creator.js"
+  }
+}
